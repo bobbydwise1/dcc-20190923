@@ -35,7 +35,20 @@ node5.addChild(node6)
 node6.addChild(node7)
 node7.addChild(node8)
 
-
+//See https://www.geeksforgeeks.org/reverse-a-linked-list/
+const reverseNodes = (rootNode) => {
+  let previous = null
+  let current = rootNode
+  let nextItem = null
+  while (current != null){
+    nextItem = current.next
+    current.next = previous
+    previous = current
+    current = nextItem
+  }
+  let node = previous
+  return node
+}
 
 $(document).ready(function() {
 
