@@ -49,7 +49,7 @@ const reverseNodes = (rootNode) => {
     previous = current
     current = nextItem
   }
-  let node = previous
+  let node = previous //Might not be required.
   return node
 }
 
