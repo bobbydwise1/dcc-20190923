@@ -35,6 +35,9 @@ node5.addChild(node6)
 node6.addChild(node7)
 node7.addChild(node8)
 
+console.log('Original LL')
+console.log(root)
+
 //See https://www.geeksforgeeks.org/reverse-a-linked-list/
 const reverseNodes = (rootNode) => {
   let previous = null
@@ -50,12 +53,5 @@ const reverseNodes = (rootNode) => {
   return node
 }
 
-$(document).ready(function() {
-
-  $('#form-1').submit(function(){
-    event.preventDefault()
-    
-    $('#output-1').text(1)
-  })
-
-});
+console.log('Reversed LL')
+console.log(reverseNodes(root))
